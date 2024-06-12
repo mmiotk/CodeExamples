@@ -32,5 +32,12 @@ pipeline {
                 ])
             }
         }
+        stage('SonarQube analysis') {
+            steps {
+                withSonarQubeEnv('Local SonarQube') {
+                     sh './gradlew sonarqube'
+                }
+            }
+        }
     }
 }
