@@ -12,12 +12,10 @@ version = '0.0.1-SNAPSHOT'
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(22)
+		languageVersion = JavaLanguageVersion.of(21)
 	}
-	java {
-		sourceCompatibility = JavaVersion.VERSION_22
-		targetCompatibility = JavaVersion.VERSION_22
-	}
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 repositories {
@@ -49,6 +47,6 @@ sonar {
 	properties {
 		property "sonar.projectKey", "calculator"
 		property "sonar.host.url", "http://localhost:9000"
-		property "sonar.token", "sqp_d7b7c7e16f9d1c262c1b14ae10dc8027b0b9f361" // Wprowadź tutaj wygenerowany token API
+		property "sonar.token", "squ_b17bf47b962d35063f02ca0bf21133dea924bb28"
 	}
 }
